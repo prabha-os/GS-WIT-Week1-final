@@ -1,0 +1,156 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    /* this is copied from net as the css rule
+    the link of styling is pasted in the head of html*/
+}
+
+.home{
+    background-color: #1c1d25;
+    height: 100vh;
+    /*vh is viewport height i.e., what is visible for us*/
+    color: white;
+}
+nav{
+    background-color: #28282d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    width: 500px;
+    justify-content: space-around;
+}
+/* intro container has two flex items*/
+.intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;/*to cover the entire space left in the section 
+    so that the content can come in the middle*/
+    padding: 80px;
+}
+h1{
+    font-size: 70px;
+}
+p{
+    font-size: 30px;
+    font-weight: 600;
+}
+.Aboutme-button{
+    background-color: coral;
+    border-radius: 30px;
+    height: 55px;
+    width: 200px;
+    padding-top: 10px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 25px;
+}
+.Aboutme-button:hover{
+    background-color: rgb(247,109,59);
+    cursor: pointer;
+}
+#about-me{
+    display:flex;
+    align-items: center;
+    padding: 80px;
+    justify-content: space-around;
+}
+#profile-pic{
+    width: 300px;
+    border-radius: 100%;
+}
+h2{
+    font-size: 55px;
+}
+#about-me-text{
+    width: 50%;
+}
+#about-me-text.p{
+    font-size: 20px;
+}
+#projects{
+    text-align: center;
+    padding: 80px;
+}
+.proj-cards{
+    height: 400px;
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 5px 5px 10px #1c1d25;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    background-color: #73737c;
+    cursor: pointer;
+}
+.projcard-text{
+    height: 75%;
+}
+#proj-container{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+/* this is so that particular code works when the size of 
+web page less than or equal to 1000px*/
+@media screen and (max-width: 1000px) {
+    #proj-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    gap:5px;
+    padding:10px;
+}
+.proj-buttons{
+    background-color: black;
+    border-radius: 15px;
+    color: white;
+    height: 55px;
+    width: 120px;
+    padding-top: 60px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    padding:10px;
+    text-decoration: none;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.proj-buttons:hover{
+    background-color: rgb(66, 62, 62);
+    cursor: pointer;
+}
+.handle{
+    margin-top: 10px;
+}
+.code-img{
+    width: 100px;
+    padding-top: 20px;
+    height: 160px;
+    margin-bottom: 20px;
+}
+footer{
+    background-color: chocolate;
+    padding: 80px;
+    text-align: center;
+}
